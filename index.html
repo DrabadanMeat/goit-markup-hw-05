@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ№4</title>
+    <title>ДЗ№5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,12 +53,27 @@
     </header>
     <!--HERO-->
     <main>
+
+
       <section class="hero bgd-img">
         <div class="container">
           <h1 class="hero-text">Ефективне рішення для вашого бізнесу</h1>
-          <button class="hero-btn" name="button">Замовити послугу</button>
+          <button class="hero-btn " name="button" data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p>здравствуйте я ваша тёща!</p>
+          <button class="modal-btn" type="button" data-modal-close>
+            <svg class="close-icon" width="18" height="18">
+          
+            </svg>
+          </button>
+        </div>
         </div>
       </section>
+
+
+
       <!--Benefits-->
       <section class="section">
         <div class="container">
@@ -93,17 +108,27 @@
       <section class="padding-zero">
         <div class="container">
           <h2 class="stud-top">Чим ми займаємося</h2>
+          
+          
           <ul class="list doing">
             <li class="stud-size">
-              <img
+              <div class="stud-made">
+                <img
                 class="img-doing"
                 src="./images/work-for-pc.jpg"
                 alt="work for pc"
                 width="370"
                 height="294"
               />
+              <p class="stud-text">десктопрні додатки</p>
+              </div>
             </li>
+
+
+
+
             <li class="stud-size">
+              <div class="stud-made">
               <img
                 class="img-doing"
                 src="./images/laptop-work.jpg"
@@ -111,8 +136,13 @@
                 width="370"
                 height="294"
               />
+              <p class="stud-text">мобільні додатки</p>
+              </div>
             </li>
+
+
             <li class="stud-size">
+              <div class="stud-made">
               <img
                 class="img-doing"
                 src="./images/work-on-a-tablet.jpg"
@@ -120,7 +150,11 @@
                 width="370"
                 height="294"
               />
+              <p class="stud-text">дизайнерські рішення</p>
+              </div>
             </li>
+
+
           </ul>
         </div>
       </section>
@@ -350,7 +384,6 @@
     <!--footer-->
     <footer class="foot">
       <div class="container footer-flex">
-        
         <div>
           <a class="link logo-footer" href="./index.html">
             <span class="acsent-logo">Web</span>Studio</a
@@ -410,8 +443,8 @@
             </li>
           </ul>
         </div>
-      
-    </div>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
