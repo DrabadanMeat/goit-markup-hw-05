@@ -408,7 +408,7 @@ margin-top: 30px;
 }
 .stud-size{
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
  
 }
 .stud-made:hover .stud-text,
